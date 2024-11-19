@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+       form{
+        display: flex;
+        flex-direction: row;
+       }
+       
+       .abc, .xyz{
+           margin: 10px;
+           height: 24px;
+       }
+         
+    </style>
+    
+</head>
+<body>
+    <div class="container"></div>
+        <h1>Edit your Details </h1>
+        <form action="">
+            <div class="left">
+                
+                    <div class="abc"><label for="">UserName:</label></div>
+                    <div class="abc"><label for="">Password:</label></div>
+                    <div class="abc"><label for="">Full Name:</label></div>
+                    <div class="abc"><label for="">Email:</label></div>
+                    <div class="abc"><label for="">Phone Number:</label></div>
+                    <div class="abc"><label for="">Address:</label></div>
+                    <div class="abc"><label for="">Hotel Branch: </label></div>
+                    <div class="abc">
+                        <button>Update</button>
+                        <button>Delete</button>
+                    </div>
+            </div>
+
+            <div class="right">
+                <div class="xyz"><input type="text"></div>
+                <div class="xyz"><input type="password"></div>
+                <div class="xyz"><input type="text"></div>
+                <div class="xyz"><input type="text"></div>
+                <div class="xyz"><input type="text"></div>
+                <div class="xyz"><input type="text"></div>
+                <div class="xyz"><input list="hotelbranch" placeholder="Select the Location"></div>
+                <datalist id="hotelbranch">
+                    <option value="Bangalore">
+                    <option value="Chennai">
+                    <option value="Delhi">
+                    <option value="Kolkata">
+                    <option value="Patna">
+                    <option value="Mumbai"></option>
+                </datalist>
+            </div>
+                
+        </form>
+    </div>
+</body>
+</html>

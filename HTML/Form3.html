@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+    <form action="">
+        <h1>Edit your Details</h1>
+        <table cellspacing="10px">
+            <tr>
+                <td><label for="">UserName:</label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><label for="">Password:</label></td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td><label for="">Full Name:</label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><label for="">Email:</label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><label for="">Phone Number:</label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><label for="">Address:</label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><label for="">Hotel Branch:</label></td>
+                    <td><input list="hotelbranch" placeholder="Select the Location"></td>
+                    <datalist id="hotelbranch">
+                        <option value="Bangalore">
+                        <option value="Chennai">
+                        <option value="Delhi">
+                        <option value="Kolkata">
+                        <option value="Patna">
+                        <option value="Mumbai"></option>
+                    </datalist>
+            </tr>
+            <tr>
+                <td><button>Update</button><button>Delete</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

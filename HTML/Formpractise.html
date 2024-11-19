@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Info</title>
+
+    <style>
+        
+        fieldset{
+            background-color: aqua;
+            padding: 30px 50px;
+        }
+        legend{
+            border: 2px;
+            background-color: black;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 0px 20px;
+            
+        }
+        button{
+            margin-left: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <fieldset>
+                <legend>Student Information</legend>
+
+                <table width="100%" >
+                    <tr class="child">
+                        <td><label for="">Studnt Name</label></td>
+                        <td><input type="text" placeholder="Enter the student name"></td>
+                        <td><label for="">Father Name</label></td>
+                        <td><input type="text" placeholder="Enter father name"></td>
+                        <td><label for="">Mother Name</label></td>
+                        <td><input type="text" placeholder="Enter father name"></td>
+                    </tr>
+                    <tr class="child">
+                        <td>
+                            <label for="">Date of Birth</label>
+                        </td>
+                        <td><input type="date"></td>
+                    </tr>
+                    <tr class="child">
+                        <td><label for="">Email</label></td>
+                        <td><input type="email" placeholder="Enter the email"></td>
+                    </tr>
+                    
+                    <tr class="child">
+                        <td><label for="">Gender</label></td>
+                        <td>
+                        <input type="radio" name="radio">Male   <!--  By giving the name="xyz" in all the input, the only one thing will get selected -->
+                        <input type="radio" name="radio">Female
+                        <input type="radio" name="radio">Other
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Mobile No</label></td>
+                        <td><input type="number"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Language</label></td>
+                        <td>
+                            <input type="checkbox">Telugu <br>
+                            <input type="checkbox">Kannada <br>
+                            <input type="checkbox">English <br>
+                            <input type="checkbox">Hindi <br>
+                            <input type="checkbox">Tamil
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="">Address</label></td>
+                        <td><textarea name="" id="" cols="20" rows="5"></textarea></td>
+                            
+                    </tr>
+                    <tr>
+                        <td><label for="">State</label></td>
+                        <td><select name="" id="">
+                            <option value="">Select</option>
+                            <option value="">Karnataka</option>
+                            <option value="">Andhra Pradesh</option>
+                            <option value="">Maharashtra</option>
+                            <option value="">Jharkhand</option>
+                            <option value="">Bihar</option>
+                        </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Resume</label></td>
+                        <td><input type="file"></td>
+                    </tr>
+                        <td colspan="6" align="center">
+                            <button>Submit</button><button>Reset</button>
+                        </td>
+
+                </table>
+            </fieldset>
+        </form>
+
+
+
+    </div>
+
+</body>
+</html>

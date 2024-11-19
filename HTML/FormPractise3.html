@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        body {
+            background-color: black;
+            }
+            .container{
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .form{
+                background-color: yellow;
+                height: 500px;
+                width: 500px;
+                border-radius: 50px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                row-gap: 20px;
+            }
+            .input1{
+                outline: none;
+                border: none;
+                font-size: 30px;
+                border-bottom: 4px dotted red;
+                background-color: transparent;
+                
+            }
+            #button{
+                background-color: brown;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 30px;
+                cursor: pointer;
+                font-size: 20px;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <input class="input1" type="text" placeholder="Enter the UserName" > <br>
+            <input class="input1" type="password" placeholder="Enter the Password" ><br>
+            <button id="button">Submit</button> 
+        </div>
+    </div>
+</body>
+</html>

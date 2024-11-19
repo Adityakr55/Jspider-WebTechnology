@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        legend{
+            border: 2px solid black;
+            padding: 5px 10px;
+            background-color: black;
+            color: white;
+            border-radius: 0px 20px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset >    <!-- it is used to create the border of the form    -->
+            <legend>LoginForm</legend>  <!-- it is used to give the name of the form-->
+
+            <label for="">Username</label>
+            <input type="text"><br><br>
+            <label for="">Password</label>
+            <input type="text">    <br><br>
+            <button>submit</button>
+        </fieldset>
+    </form> <hr>
+
+    <form action="">
+        <fieldset>
+            <legend>LoginForm</legend>
+
+            <table cellspacing="10px">
+                <tr>
+                    <td><label for="">UserName</label></td>
+                    <td><input placeholder="Enter the username" type="text"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Password</label></td>
+                    <td><input placeholder="Enter the password" type="password"></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" align="center"><button>Submit</button></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+
+    <form action="">
+        <fieldset >
+            <legend>LoginForm</legend>
+        
+        <table cellspacing="10px" align="center">
+            <tr>
+                <td><label for="">UserName</label></td>
+                <td><input placeholder="Enter the username" type="text"></td>
+            </tr>
+            <tr>
+                <td><label for="">Password</label></td>
+                <td><input placeholder="Enter the password" type="password"></td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2"><button>Submit</button></td>
+            </tr>
+        </table>
+    </fieldset>
+    </form>
+</body>
+</html>

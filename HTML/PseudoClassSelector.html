@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Pseudo-Classes Example with Backgrounds</title>
+    <style>
+        /* Default (unvisited) link */
+        a:link {
+            color: white;
+            background-color: darkred;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        /* Visited link */
+        a:visited {
+            color: white;
+            background-color: purple;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        /* Hover effect */
+        a:hover {
+            color: black;
+            background-color: lightgreen;
+            padding: 10px;
+            text-decoration: underline;
+            border-radius: 5px;
+        }
+
+        /* Active link */
+        a:active {
+            color: yellow;
+            background-color: navy;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Link Pseudo-Classes Example with Distinct Background Colors</h2>
+    <p>Click on the link below and observe the changes:</p>
+    <p>
+        <a href="https://www.freecodecamp.com" target="_blank">Click and hold to see active state</a>
+    </p>
+    <p>Explanation of each style:</p>
+    <ul>
+        <li><strong>Unvisited (a:link)</strong>: Link is white text on a dark red background.</li>
+        <li><strong>Visited (a:visited)</strong>: After clicking, the link becomes white on a purple background.</li>
+        <li><strong>Hover (a:hover)</strong>: On hover, the link changes to black text on a light green background with an underline.</li>
+        <li><strong>Active (a:active)</strong>: While clicking and holding, the link changes to yellow text on a navy background.</li>
+    </ul>
+</body>
+</html>
