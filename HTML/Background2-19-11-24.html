@@ -8,28 +8,32 @@
         .container{
             border: 2px solid black;
             width: 300px;
+            height: auto;
             text-align: center;
             padding: 30px 0px;
             background-image: url(https://wallpapers.com/images/featured/nature-2ygv7ssy2k0lxlzu.jpg);
-            background-attachment: fixed;
             background-size: cover;
-            margin: 200px auto;
+            margin: 300px auto;
+            border-radius: 20px;
         }
 
-        input{
-            /* background: transparent; */
+        input,button{
+            background: transparent;
+            
             border: none;
-            color: white;
-            border-bottom: 2px dotted white;
+            color: red;
+            border-bottom: 2px dotted rgb(234, 13, 13);
+            margin: 10px;
         }
         body{
             background-image: url(https://wallpapers.com/images/featured/nature-2ygv7ssy2k0lxlzu.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
+            background-repeat: repeat;
+            /* background-size: cover; */
         }
         .container:hover{
-            box-shadow: white 0px 0px 10px;
+            box-shadow: white 0px 0px 20px;
         }
+        
     </style>
 </head>
 <body>
@@ -44,7 +48,7 @@
             <input type="text" placeholder="Re-enter the password">
         </div>
         <div class="child">
-            <button>Submit</button>
+            <button style="cursor: pointer;color:wheat;">Submit</button>
         </div>
     </div>
    

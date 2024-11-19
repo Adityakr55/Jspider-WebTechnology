@@ -14,7 +14,7 @@
         .container{
             background-color: #27262C;
             width: 100%;
-            height: 700px;
+            height: 800px;
             border-radius: 20px;
             
         }
@@ -36,29 +36,32 @@
         </div>
         <div>
             <form action="" >
-                <div>
-                    <label for="" style="color: white; font-size: 20px;">Full Name:<sup style="color: red;">*</sup></label>
+                <div style="margin-bottom: 10px;">
+                    <label for="" style="color: white; font-size: 20px;">Full Name<sup style="color: red;">*</sup></label>
                     
                 </div>
-                <div>
-                    <input type="text" placeholder="First name" style="border-radius: 10px; height: 20px; width: 250px; border: none;">
-                    <input type="text" placeholder="last name" style="border-radius: 10px; height: 20px; width: 250px; border: none;">
+                <div style="margin-bottom: 40px;">
+                    <input type="text" required style="border-radius: 20px; height: 35px; width: 350px; border: none; margin-right: 10px;">
+                    <input type="text" required style="border-radius: 20px; height: 35px; width: 350px; border: none;">
+                </div>
+                <div style="display: flex;color: white;gap: 350px; margin-top: -55px;margin-bottom: 20px;">
+                    <p>First</p> <p>Last</p>
                 </div>
 
-                <div style="color: white;">
-                    <label for="" style="font-size: 20px;">Email:</label>
+                <div style="color: white; margin-bottom: 10px;">
+                    <label for="" style="font-size: 20px;">Email<sup style="color: red;">*</sup></label>
+                </div>
+                <div style="margin-bottom: 40px;">
+                    <input type="email" required style="border-radius: 20px; height: 35px; width: 720px; border: none;">
+                </div>
+                <div style="color: white;margin-bottom: 10px;">
+                    <label for="" style="font-size: 20px;">Leave us a few words<sup style="color: red;">*</sup></label>
                 </div>
                 <div>
-                    <input type="text">
+                    <textarea name="" id="" cols="88" rows="5" required style="border-radius: 20px;"></textarea>
                 </div>
-                <div style="color: white;">
-                    <label for="" style="font-size: 20px;">Leave us a few words</label>
-                </div>
-                <div>
-                    <textarea name="" id="" cols="87" rows="10"></textarea>
-                </div>
-                <div style="text-align: center;">
-                    <button style="font-size: 20px;">Submit</button>
+                <div style="text-align: center;margin-top: 70px;">
+                    <button style="font-size: 20px;border-radius: 20px; height: 40px;width: 150px; padding: 20px,20px,20px,20px; border: none; color: white; background-color: rgb(231,17,91);">Submit</button>
                 </div>
             </form>
         </div>
