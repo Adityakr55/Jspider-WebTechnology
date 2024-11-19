@@ -4,10 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Background</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            width: 300px;
+            text-align: center;
+            padding: 30px 0px;
+            background-image: url(https://wallpapers.com/images/featured/nature-2ygv7ssy2k0lxlzu.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+            margin: 200px auto;
+        }
+
+        input{
+            /* background: transparent; */
+            border: none;
+            color: white;
+            border-bottom: 2px dotted white;
+        }
+        body{
+            background-image: url(https://wallpapers.com/images/featured/nature-2ygv7ssy2k0lxlzu.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .container:hover{
+            box-shadow: white 0px 0px 10px;
+        }
+    </style>
 </head>
 <body>
-    <div>
-        
+    <div class="container">
+        <div class="child">
+            <input type="text" placeholder="Enter the username">
+        </div>
+        <div class="child" >
+            <input type="text" placeholder="Enter the password">
+        </div>
+        <div class="child">
+            <input type="text" placeholder="Re-enter the password">
+        </div>
+        <div class="child">
+            <button>Submit</button>
+        </div>
     </div>
+   
 </body>
 </html>
