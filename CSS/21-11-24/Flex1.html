@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+
+        .container{
+        height: 100vh;
+        border: 2px solid black;
+        display: flex;
+        /* flex-direction: column;
+        flex-direction: row; */
+        /* flex-direction: row-reverse;
+        flex-direction: column-reverse; */
+        gap: 20px;
+        /* gap: 20px 30px; */
+        /* row-gap: 20px;
+        column-gap: 20px; */
+          /*  flex-wrap: wrap;  /*The flex-wrap: wrap; is particularly useful for 
+            creating flexible, responsive designs that adapt to different screen sizes and content amounts.*/
+        flex-flow: column wrap;  syntax:- flex-flow: direction wrap;
+        justify-content: center;
+        /* justify-content: start; */
+
+        /*align content will only work when fles-wrap is wrap */
+
+        /* align-content: end; */
+        }
+
+        .items{
+            background: brown;
+            color: white;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items">Item-1</div>
+        <div class="items">Item-2</div>
+        <div class="items">Item-3</div>
+        <div class="items">Item-4</div>
+        <div class="items">Item-5</div> 
+        <!-- <div class="items">Item-6</div>
+        <div class="items">Item-7</div>
+        <div class="items">Item-8</div>
+        <div class="items">Item-9</div>
+        <div class="items">Item-10</div>
+        <div class="items">Item-1</div>
+        <div class="items">Item-2</div>
+        <div class="items">Item-3</div>
+        <div class="items">Item-4</div>
+        <div class="items">Item-5</div>
+        <div class="items">Item-6</div>
+        <div class="items">Item-7</div>
+        <div class="items">Item-8</div>
+        <div class="items">Item-9</div>
+        <div class="items">Item-10</div> -->
+    </div>
+</body>
+</html>
