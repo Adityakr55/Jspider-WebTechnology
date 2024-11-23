@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(4,auto);
+            
+            gap: 20px;
+            height: 90vh;
+            border: 2px solid red;
+            padding: 20px;
+        }
+        .child{
+            background-color: aqua;
+            border: 2px solid black;
+            
+        }
+        .child:hover {
+            box-shadow: 0px 0px 10px 5px gray;
+            transform: scale(1.01);
+            transition: transform 0.3s ease;
+        }
+        .one{
+            grid-column: 1/3;
+            grid-row: 1/3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child one ">Item-1</div>
+        <div class="child two">Item-2</div>
+        <div class="child three">Item-3</div>
+        <div class="child four">Item-4</div>
+        <div class="child five">Item-5</div>
+    </div>
+</body>
+</html>
