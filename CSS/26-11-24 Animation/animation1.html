@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            height: 100vh;
+            width: 100vw;
+            border: 2px solid black;
+            animation-name: ChangeColor;
+            animation-duration: 10s;
+        }
+        @keyframes ChangeColor{
+            0%{
+                background-color: blue;
+            }
+            20%{
+                background-color: red;
+            }
+            40%{
+                background-color: aqua;
+            }
+            60%{
+                background-color: chartreuse;
+            }
+            80%{
+                background-color: coral;
+            }
+            100%{
+                background-color: pink;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

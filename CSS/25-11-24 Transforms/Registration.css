@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(177,165,173);
+    padding: 10px;
+    height: 8vh;
+    position: relative;
+
+}
+#sm{
+    position: absolute;
+    top: 25%;
+    left: 2%;
+    background-color: rgba(255, 255, 255, 0.637);
+    padding: 0.5rem;
+    text-decoration: none;
+    border-radius: 50%;
+    color: orange;
+    font-weight: bold;
+    margin-left: 1rem;
+    box-shadow:inset 0px 3px 1px rgba(0, 0, 0, 0.936) ;
+    cursor: pointer;
+}
+#navRegister{
+    position: absolute;
+    top: 25%;
+    right: 2%;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 0.7rem;
+    background-color: orange;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.936);
+    border: none;
+    cursor: pointer;
+}
+
+.nav h4 {
+    margin-left: 1.5rem;
+    color: black;
+    font-weight: bold;
+}
+
+#about{
+    padding: 4rem 4rem;
+}
+.content{
+    background-color: rgb(61, 72, 105);
+    height: 92vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    height: 60%;
+    width: 22%;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    background-color:rgb(61, 72, 105);
+}
+
+.form h1{
+    color: orange;
+    font-weight: normal;
+    margin-bottom: 1rem;
+}
+.form .input{
+    height: 2rem;
+    width: 90%;
+    padding: 0.1rem;
+    margin: 0.5rem;
+    border-radius: 0.1rem;
+    border: none;
+    display: flex;
+    justify-content: center;
+    
+}
+input{
+    color: white;
+    border: none;
+    border-radius: 0.1rem;
+    padding: 0.5rem;
+    width: 90%;
+}
+
+.form button{
+    background-color: orange;
+    color: white;
+    border: none;
+    font-weight: bold;
+    border-radius: 0.1rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    width: 364%;
+    margin-left: -133%;
+    margin-top: 0.5rem;
+}
