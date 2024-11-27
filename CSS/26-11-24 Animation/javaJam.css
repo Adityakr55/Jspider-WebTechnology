@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    position: relative;
+}
+.container{
+    display: flex;
+}
+img{
+   width: 12rem;
+}
+.left{
+    background-color: rgb(35,24,21);
+    color: #fff;
+    text-align: center;
+    width: 15%;
+
+}
+.content{
+    width: 85%;
+}
+ul{
+    list-style-type: none;
+    margin-top: 5rem;
+
+}
+li a{
+    padding: 5px;
+    color: #F6EEAA;
+    text-decoration: none;
+    background-color: #433B36;
+    line-height: 2.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    padding: .2rem 1rem;
+    cursor: pointer;
+}
+
+h1{
+    font-size: 3.5em;
+    letter-spacing: .1rem;
+    margin: 20px 0;
+    color: rgb(33,24,17);
+    background-color: #f0cea7;
+    border-radius: 1.5rem;
+    display: inline-block;
+    padding: .2rem 1rem;
+}
+.heading{
+    background-color: rgb(210,180,140);
+    height: 22%;
+    padding:1rem;
+    display: flex;
+    align-items: center;
+}
+.form{
+    background-color: rgb(254,245,194);
+    height: 78%;
+
+}
+
+h2{
+    font-size: 2em;
+    padding: .2rem 1rem;
+    margin-left: 5rem;
+    margin-top: .5rem;
+    color: rgb(33,24,17);
+    background-color: #f0eaa3;
+    display: inline-block;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+}
+
+.form>span{
+    
+    margin-left: 4rem;
+    word-spacing: 0.3rem;
+    letter-spacing: 0.1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: #f0eaa3;
+    padding: .2rem 1rem;
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+}
+
+
+.form-container {
+    display: flex;
+    max-width: 600px;
+    margin: 5rem 2rem;
+    gap: 20px;
+}
+.labels-column {
+    text-align: right;
+    flex: 1;
+    line-height: 2rem;
+}
+.labels-column label {
+    background-color: #f0eaa3;
+    padding: .3rem 1rem;
+    border-radius: 1rem;
+    margin-bottom: 10px;
+}
+.inputs-column {
+    flex: 1;
+}
+.labels-column label, 
+.inputs-column input, 
+.inputs-column textarea {
+    margin-bottom: 10px;
+    width: 80%;
+    box-sizing: border-box;
+}
+.inputs-column textarea {
+    width:100%;
+}
+#name, #email, #textarea {
+    padding: .2rem 1rem;
+}
+.button-container {
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+    background-color: #f0eaa3;
+    padding: .4rem 1rem;
+    border-radius: 1rem;
+}
+button{
+    padding: .1rem 1rem;
+    cursor: pointer;
+}
+.required-marker {
+    color: red;
+}
+footer{
+    background-color: rgb(210,180,140);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+}
+footer span{
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: #f0eaa3;
+    padding: .2rem 1rem;
+    border-radius: 1rem;
+    color: black;
+}
