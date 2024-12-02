@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #b5bbbc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .landing-page {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #92D7E4;
+            width: 100%;
+            height: 100%;
+        }
+
+        .text-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 2rem;
+            background-color: #92D7E4;
+            margin-left: 3rem;
+        }
+
+        .text-section h1 {
+            color: #053769;
+            font-size: 4em;
+            margin-bottom: 1rem;
+        }
+
+        .read-now-button {
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            padding: 1rem 2rem;
+            border-radius: 15px;
+            font-weight: bold;
+            font-size: 1.5rem;
+            text-align: center;
+            display: inline-block;
+            transition: background-color 0.3s;
+            max-width: 200px;
+        }
+
+        .read-now-button:hover {
+            background-color: #0056b3;
+        }
+
+        .image-section {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            padding: 2rem;
+            margin-right: 3rem;
+        }
+
+        .image-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        #laptopimg {
+            z-index: 0;
+            position: absolute;
+        }
+
+        #screenimg {
+            position: absolute;
+            z-index: 1;
+            height: 42%;
+            width: 77%;
+            margin-top: -2rem;
+        }
+
+        .text-section>a span {
+            font-size: 1.5rem;
+            margin-left: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .text-section h1 {
+                font-size: 2em;
+            }
+
+            .read-now-button {
+                font-size: 1.2rem;
+                padding: 0.8rem 1.5rem;
+            }
+
+            #screenimg {
+                width: 90%;
+                margin-top: -1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .landing-page {
+                flex-direction: column;
+            }
+
+            .text-section {
+                padding: 1.5rem;
+            }
+
+            .image-section {
+                padding: 1rem;
+            }
+
+            .text-section h1 {
+                font-size: 1.8em;
+            }
+
+            .read-now-button {
+                font-size: 1rem;
+                padding: 0.5rem 1rem;
+            }
+
+            #screenimg {
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="landing-page">
+        <div class="text-section">
+            <h1>What is a Landing <br> Page & Why is it <br> Important?</h1>
+            <a href="#" class="read-now-button">Read Now <span>></span></a>
+        </div>
+        <div class="image-section">
+            <img id="laptopimg" src="https://www.teamgate.com/app/uploads/2018/01/landing-page.png" alt="Landing Page on Devices">
+            <img id="screenimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT34xx5O0n49_q3CXfHNMNgjDCeuyjXknh_OQ&s" alt="Screen Image">
+        </div>
+    </div>
+</body>
+</html>
