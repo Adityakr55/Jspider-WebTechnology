@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: white; */
+}
+
+.heading{
+    color:white;
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 2rem;
+}
+.heading>h1{
+    font-weight: 400;
+    color: white;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+body{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi4HNWS91sxbMwc9EcCJ9rawTRew-Ar23Kug&s");
+    background-size: cover;
+    background-repeat: no-repeat;
+   background-attachment: fixed;
+}
+label,fieldset{
+    color: white;
+}
+
+fieldset{
+    padding:1rem 3rem;
+    border-radius: 0 2rem;
+    margin-bottom: 3rem;
+    width: 80%;
+    box-shadow: 5px 5px 5px 5px white;
+}
+legend{
+    padding: 1rem 3rem;
+    background-image: linear-gradient(to right, #1124f1, #f55719);
+    border-radius: 0 1rem;
+}
+
+table {
+    width: 100%; /* Table consumes full width */
+    border-collapse: collapse; /* Removes gaps between cells */
+    table-layout: fixed; /* Ensures equal width for columns */
+    border-spacing: 10px 20px;
+}
