@@ -23,10 +23,9 @@ form{
     margin-top: 2rem;
 }
 body{
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi4HNWS91sxbMwc9EcCJ9rawTRew-Ar23Kug&s");
-    background-size: cover;
-    background-repeat: no-repeat;
-   background-attachment: fixed;
+    background-image: url("https://cdn.magicdecor.in/com/2023/02/29201339/image-1686213148-8157-710x488.jpg");
+   
+    background-attachment: fixed;
 }
 label,fieldset{
     color: white;
@@ -37,7 +36,8 @@ fieldset{
     border-radius: 0 2rem;
     margin-bottom: 3rem;
     width: 80%;
-    box-shadow: 5px 5px 5px 5px white;
+    box-shadow: 0 0 5px 5px white;
+    background-color: rgba(43, 33, 33, 0.681);
 }
 legend{
     padding: 1rem 3rem;
@@ -47,7 +47,16 @@ legend{
 
 table {
     width: 100%; /* Table consumes full width */
-    border-collapse: collapse; /* Removes gaps between cells */
+    border-collapse: separate; /* Removes gaps between cells */
     table-layout: fixed; /* Ensures equal width for columns */
-    border-spacing: 10px 20px;
+    border-spacing: 10px;
+}
+td{
+    padding: 5px;
+}
+.education,#submit{
+    text-align: center;
+}
+input{
+   line-height: 2rem;
 }
