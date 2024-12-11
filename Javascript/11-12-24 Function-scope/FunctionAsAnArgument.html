@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Function as an argument</h1>
+    <script>
+        main();
+
+        function main()
+        {
+            let output = calc(10,20,sum);
+            console.log(output);
+            output = calc(10,20,mul);
+            console.log(output);
+        }
+
+        function calc(n1,n2,type)
+        {
+            let res = type(n1,n2);
+            return res;
+        }
+
+        function sum(n1,n2)
+        {
+            return n1+n2;
+        }
+        
+        function mul(n1,n2)
+        {
+            return n1*n2;
+        }
+    </script>
+</body>
+</html>

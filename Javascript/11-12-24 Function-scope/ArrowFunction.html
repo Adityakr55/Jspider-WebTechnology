@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Arrow Function</h1>
+    <script>
+        let sum = () => {
+            let a = 1;
+            let b = 2;
+            console.log(a+b);
+        };
+        sum();
+
+        let mul = (n1,n2) => {
+            return n1*n2;
+        };
+        let res = mul(10,20);
+        console.log("res= "+res);
+
+        let mull = n1 => n1*2; // here we can't redeclare the variable mul because it is already declared in the above line
+                                // so we have to change the variable name b/c let does not allow the same variable to be declared twice in the same block or function scope. Redeclaring mul causes the code to break. 
+        console.log(mull(10));
+
+
+        function main()
+        {
+            console.log("main starts");
+            var a = 10;
+            return function m1()
+            {
+                console.log("m1 starts");
+                console.log(a);
+                console.log("m1 ends");
+            }
+            console.log("main ends"); // unreachable code
+        }
+        let n1 = main();
+        console.log(n1);
+        n1();
+    </script>
+</body>
+</html>
