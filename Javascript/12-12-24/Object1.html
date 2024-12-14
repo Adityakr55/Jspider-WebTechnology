@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Object</h1>
+    <script>
+        'use strict';
+        let s1 = {
+            sid: "Jsp101",
+            firstName: "Kiran",
+            lastName: "Kumar",
+            fullName: "Kiran Kumar",
+            birthYear: 2000
+        };
+
+        console.log(s1);
+
+
+        // accessing props using dot(.) notation (objRef.propName)
+
+        let stuName = s1.firstName;
+        let year = s1.birthYear;
+
+        console.log(`Student Name ==> ${stuName} , Student BirthYear ==> ${year}`);
+
+        // accessing props using bracket[] notation (objRef["propName"])
+
+         let studName = s1["firstName"];
+         let birthyear = s1["birthYear"];
+
+        console.log(`Student Name ==> ${studName} , Student BirthYear ==> ${birthyear}`);
+
+        console.log(s1.email); // undefined
+        console.log(s1["email"]); // undefined
+
+    </script>
+</body>
+</html>

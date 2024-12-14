@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Argument Object</h1>
+    <script>
+        main();
+        function main() {
+            add();
+            add(1);
+            add(1, 2);
+            add(1, 2, 3);
+            add(1, 2, 3, 4);
+        }
+        function add() {
+           let len = arguments.length;
+           console.log("length: ", len);
+        }
+
+        main1();
+        function main1() {
+            add1();
+            add1(1);
+            add1(1, 2);
+            add1(1, 2, 3);
+            add1(1, 2, 3, 4);
+        }
+
+        function add1() {
+            let res = 0;
+            for (let i = 0; i < arguments.length; i++) {
+                res += arguments[i];
+            }
+            console.log("sum = "+res);
+        }
+    </script>
+</body>
+</html>

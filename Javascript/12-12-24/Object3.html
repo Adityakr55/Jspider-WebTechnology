@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascript Object</h1>
+
+    <script>
+        let s1 = {
+            sid:"jsp101",
+            firstName:"kiran",
+            lastName:"kumar",
+            fullName:"kiran kumar",
+            birthyear: 200,
+            age: 24,
+            "age": 23
+        };
+
+        console.log(s1,typeof s1);
+        console.log(s1["birthyear"]);
+        let info = prompt("Enter info");
+        console.log(info, typeof info);
+
+        console.log(s1.info);
+        // console.log(s1["info"]);
+        console.log(s1[info]);
+    
+    </script>
+</body>
+</html>

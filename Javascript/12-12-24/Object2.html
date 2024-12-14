@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascript Object</h1>
+    <script>
+        let s1 = {
+            "1sid": "Jsp101",
+            firstName: "Kiran",
+            lastName: "Kumar",
+            "full Name": "Kiran Kumar",
+            "birthYear": 2000
+        };
+
+        // console.log(s1.1sid); // SyntaxError: Unexpected number
+        console.log(s1["1sid"]);
+        console.log(s1["full Name"]);
+        console.log(s1["firstName"]);
+        console.log(s1.lastName);
+        console.log(s1.birthYear);
+                
+    </script>
+</body>
+</html>
