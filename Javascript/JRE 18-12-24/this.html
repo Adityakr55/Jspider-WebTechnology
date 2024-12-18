@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        "use strict";
+
+        let b = this;
+        console.log(b);
+
+        function main()
+        {
+            console.log(this);
+        }
+        main();
+
+        let m1 = function()
+        {
+            console.log(this);
+        }
+        m1();
+
+        let m2 = () => {
+            console.log(this);
+        }
+        m2();
+
+
+        let s1 = {
+            sid: "jsp101",
+            firstName: "Rahul",
+            lastName: "Kumar",
+            fullName: "Rahul Kumar",
+            birthyear: 2000,
+            calcAge: function()
+            {
+                console.log(this.birthyear); //s1
+                let d1 = new Date();
+                let currentYear = d1.getFullYear(); // 2024
+                let age = currentYear - this.birthyear;
+                console.log(age);
+                
+            }
+        };
+        console.log(s1.calcAge());
+        s1.calcAge();
+
+    </script>
+</body>
+</html>

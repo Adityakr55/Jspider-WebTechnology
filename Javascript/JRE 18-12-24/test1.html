@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Execution Context</h1>
+    <script>
+        
+    function studentDetails(id,name)
+    {
+        let institute = "Jdpider";
+        const branch = "marathahalli";
+        var course = "java";
+
+        function printDetails()
+        {
+            console.log(`Student Name ==> ${name}, Student Details ==> ${course}`);
+        }
+
+        let welcomeMsg = function()
+        {
+            console.log(`Hi ${name} welcome to ${institute}`);
+        }
+
+        var greetMsg =() =>
+        {
+            console.log(`Hi ${name} Good Morning`);
+        }
+        printDetails();
+        welcomeMsg();
+    }
+    studentDetails(101,"Kiran");
+
+    </script>
+</body>
+</html>

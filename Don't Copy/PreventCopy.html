@@ -6,29 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Function Overloading</h1>
+    <h1>Bhaaiyoo or bhaaiyoo ki bahino mera content copy na kre.</h1>
     <script>
-
-        document.addEventListener("copy",(event)=>{
+         document.addEventListener("copy",(event)=>{
             const selectedData = window.getSelection().toString();
             event.clipboardData.setData("text/plain","🖕");
             event.preventDefault();
         });
-        main();
-        function main() {
-            add(1, 2);
-        }
-
-        function add(a, b) {
-            let res = a + b;
-            console.log(res);
-        }
-        function add(a, b, c) {
-            let res = a + b + c;
-            console.log(res);
-        }
-
-        
     </script>
 </body>
-</html>
+</html> 
