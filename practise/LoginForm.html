@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        width: 100%;
+        height: 100vh;
+        background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20230612/pngtree-man-on-a-mountain-starry-sky-wallpaper-for-mobile-image_2936450.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .form {
+        background-color: rgba(0, 0, 0, 0.5);
+        border: 2px solid gray;
+        width: 30%;
+        height: 50%;
+        border-radius: 1rem;
+        color: white;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        transition: all 0.3s ease;
+      }
+      .form:hover,
+      button:hover {
+        transform: scale(1.01);
+        box-shadow: 0 0 0.5rem 0.2rem gray;
+      }
+      .form h1 {
+        margin-top: 3rem;
+        font-size: xx-large;
+        text-align: center;
+      }
+
+      input {
+        background: none;
+        border: none;
+        border-bottom: 0.1rem solid gray;
+        width: 80%;
+        color: white;
+      }
+
+      input:focus {
+        outline: none;
+        border-bottom: 0.1rem solid #14cdde;
+      }
+
+      /* Style for placeholder text */
+      input::placeholder {
+        color: rgba(255, 255, 255, 0.5);
+      }
+      .email,
+      .password {
+        display: flex;
+        justify-content: left;
+        margin-top: 2rem;
+        margin-left: 2.5rem;
+      }
+
+      .remember-me input[type="checkbox"] {
+        width: auto;
+      }
+
+      .options {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: 1rem auto;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      button {
+        width: 80%;
+        cursor: pointer;
+        line-height: 2rem;
+        border-radius: 0.5rem;
+        background-color: #14cdde;
+        font-size: large;
+        font-weight: bold;
+        border: none;
+      }
+
+      /* Media Queries */
+
+      /* Large tablets and small laptops */
+      @media screen and (max-width: 1024px) {
+        .form {
+          width: 50%;
+        }
+      }
+
+      /* Tablets */
+      @media screen and (max-width: 768px) {
+        .form {
+          width: 70%;
+        }
+
+        .form h1 {
+          font-size: x-large;
+        }
+
+        .email,
+        .password {
+          margin-left: 2rem;
+        }
+      }
+
+      /* Large phones */
+      @media screen and (max-width: 576px) {
+        .form {
+          width: 80%;
+          min-height: 450px;
+        }
+
+        .options {
+          flex-direction: column;
+          align-items: center;
+          gap: 1rem;
+        }
+
+        .email,
+        .password {
+          margin-left: 2rem;
+        }
+
+        button {
+          font-size: medium;
+        }
+      }
+
+      /* Small phones */
+      @media screen and (max-width: 375px) {
+        .form {
+          padding: 10px;
+          min-height: 400px;
+        }
+
+        .form h1 {
+          font-size: large;
+          margin-top: 1rem;
+        }
+
+        .email,
+        .password {
+          margin-left: 0.5rem;
+          margin-top: 1.5rem;
+        }
+
+        input {
+          width: 90%;
+        }
+
+        button {
+          width: 90%;
+        }
+      }
+
+      /* Landscape mode */
+      @media screen and (max-height: 500px) {
+        .container {
+          height: auto;
+          min-height: 100vh;
+        }
+
+        .form {
+          margin: 20px 0;
+        }
+
+        .form h1 {
+          margin-top: 1rem;
+        }
+
+        .email,
+        .password {
+          margin-top: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form">
+        <h1>Login</h1>
+        <div class="email">
+          <label for="email">Email</label>
+        </div>
+        <div class="emailInput">
+          <input type="email" id="email" required autocomplete="email" />
+        </div>
+        <div class="password">
+          <label for="password">Password</label>
+        </div>
+        <div class="PasswordInput">
+          <input
+            type="password"
+            id="password"
+            required
+            autocomplete="current-password"
+          />
+        </div>
+        <div class="options">
+          <div class="remember-me">
+            <input type="checkbox" id="remember" />
+            <label for="remember">Remember me</label>
+          </div>
+          <a href="#">Forgot password?</a>
+        </div>
+        <div class="button">
+          <button>Submit</button>
+        </div>
+        <div>
+          <p>Don't have an account? <a href="#">Register</a></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
