@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+        }
+        div{
+            background-color: yellow;
+            text-align: center;
+            color: red;
+            padding: 20px;
+        }
+        div>button{
+            background-color: blue;
+            color: white;
+            outline: none;
+            border: none;
+            padding: 7px 20px;
+            margin-top: 10px;
+            
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1 id="display-message">Print Message</h1>
+        <button onclick="printMessage()">Submit</button>
+    </div>
+
+    <!-- Script Code-->
+     <script>
+        function printMessage()
+        {
+            let msg = document.getElementById('display-message');
+            msg.textContent = 'Hello World!!';
+            msg.style.color = "aqua";
+        }
+        //printMessage();
+     </script>
+</body>
+</html>

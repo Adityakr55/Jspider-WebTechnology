@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="header">This is Header</h1>
+    <div>
+        <h2>
+            List of Courses
+        </h2>
+        <ol>
+            <li class="course">Html</li>
+            <li class="course">Css</li>
+            <li>Javascript</li>
+        </ol>
+    </div>
+
+   <!-- Script body -->
+
+   <script>
+
+    let bodyTag = window.document.body; // body is the property of document. here writing of window is optional.
+    console.log(bodyTag);
+
+    // let h1Tag = document.body.h1; // output will be undefined b/c h1 is not the property of body.
+    // console.log(h1Tag);
+
+    let h1Tag = document.getElementById('header');
+    console.log(h1Tag);
+
+    let listTags = document.getElementsByClassName('course');
+    console.log(listTags);
+
+    let tags = document.getElementsByTagName('h1');
+    console.log(tags);
+
+    let cssSelectors = document.querySelector('#header');
+    console.log(cssSelectors);
+
+    let cssSelectorss = document.querySelectorAll('.course');
+    console.log(cssSelectorss);
+
+
+    
+   </script>
+</body>
+</html>

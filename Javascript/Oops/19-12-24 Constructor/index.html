@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>constructor function</h1>
+    <script>
+        function Main()
+        {
+            console.log(this);
+        }
+
+        let m1 = new Main();
+        console.log(m1);
+
+        function Student(sid,name,birthyear)
+        {
+            this.sid = sid;
+            this.name = name;
+            this.birthyear = birthyear;
+        }
+
+        let s1 = new Student("jsp101", "kiran", 2000);
+        console.log(s1);
+
+        let s2 = new Student("Jsp102","Ashok",1999);
+        console.log(s2);
+        
+        let s3 = new Student();
+
+        let s4;
+
+        console.log(s1 instanceof Student);
+        console.log(s2 instanceof Student);
+        console.log(s3 instanceof Student);
+        console.log(s4 instanceof Student);
+    </script>
+</body>
+</html>

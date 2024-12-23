@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<body>
+    <h1>Variables</h1>
+    <script>
+        class B{
+            static n1 = 10;
+            n2 = 20;
+
+            static main()
+            {
+                let a = 1;
+                console.log(a);
+                console.log(B.n1);
+
+                let b = new B();
+                let b1 = new B();
+                console.log(b.n2);
+            }
+        }
+
+        // B.main();
+
+        class C{
+            n1 = 0;
+            static n2 = 0;
+            static main()
+            {
+                let c1 = new C();
+                console.log(c1.n1); // 0
+                console.log(C.n2); // 0
+
+                C.n2 = 10;
+                console.log(C.n2);
+                c1.n1 = 1;
+
+                console.log(C.n1); // Since n1 is an instance property, it does not exist on the class C. When you try to access C.n1, it does not find n1 on the class and returns undefined.
+                console.log(c1.n1); // 1
+
+                let c2 = new C();
+                console.log(c2.n1);
+            }
+        }
+        C.main();
+    </script>
+</body>
+</html>

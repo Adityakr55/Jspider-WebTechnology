@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<body>
+    <h1>Variables</h1>
+    <script>
+
+        class Student{
+            sname = null;
+            phno = null;
+            static count = 0;
+            static inst = "Jspiders";
+
+            static getcount()
+            {
+                return Student.count;
+            }
+
+            printDetails()
+            {
+                console.log(`Student name ==> ${this.sname}, Student Phone number ==> ${this.phno}`);
+            }
+        }
+
+        class Test_2{
+            static main()
+            {
+                console.log(Student.getcount());
+                let s1 = new Student();
+                s1.sname = "Kiran";
+                s1.phno = 1234567890;
+                Student.count++;
+                console.log(s1);
+                console.log(Student.getcount());
+            }
+        }
+
+        Test_2.main();
+    </script>
+</body>
+</html>

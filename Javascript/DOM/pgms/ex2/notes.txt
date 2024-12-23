@@ -1,0 +1,3 @@
+* queryselector method is used to fetch the html elements from dom tree by using css selectors
+
+* querySelector method will return only first matched element.
