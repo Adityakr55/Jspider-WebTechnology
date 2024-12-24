@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+        }
+        div{
+            background-color: yellow;
+            text-align: center;
+            color: red;
+            padding: 20px;
+        }
+        div>button{
+            background-color: blue;
+            color: white;
+            outline: none;
+            border: none;
+            padding: 7px 20px;
+            margin-top: 10px;
+            
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1 id="display-message">Print Message</h1>
+        <button onclick="printMessage()">Click Here</button>
+        <button id="btn-ele_1">Click Here</button>
+        <button id="btn-ele_2">Click Here</button>
+    </div>
+
+    <!-- Script Code-->
+     <script>
+
+        let msg = document.getElementById('display-message');
+
+
+        // Inline Event Handler
+        function printMessage()
+        {
+            
+            msg.textContent = 'Hello World!!';
+            msg.style.color = "aqua";
+        }
+
+
+        // Handling Event By Using Event Property
+        let clickBtn = document.getElementById('btn-ele_1');
+        clickBtn.onclick = function()
+        {
+            msg.textContent = 'Good Morning!!';
+            msg.style.color = "blue";
+        };
+
+
+        // Handling Event By using addEventListener() method
+        let clickBtn_2= document.querySelector('#btn-ele_2');
+        clickBtn_2.addEventListener('click',function()
+        {
+            msg.textContent = 'Good Afternoon!!';
+            msg.style.color = "purple";
+        })
+
+     </script>
+</body>
+</html>

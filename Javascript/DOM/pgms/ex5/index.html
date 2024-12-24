@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../BootStrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Document</title>
+    <style>
+        img {
+            height: 5rem;
+            width: 5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar-nav navbar bg-dark">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand text-white">🛒 Amazon</a>
+        </div>
+    </nav>
+
+    <section class="container-fluid mt-4">
+        <div class="row">
+            <div class="col">
+                <h1>Product Info:-</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sunt illum quos asperiores dolore
+                    eum
+                    nihil
+                    inventore fuga laudantium id quod repellat totam culpa quo porro repudiandae velit, odit animi?
+                    Ducimus quo maxime suscipit distinctio? Inventore molestiae sint, pariatur mollitia placeat
+                    voluptatibus
+                    quas
+                    officia debitis commodi excepturi doloremque aspernatur ratione nemo impedit totam facere
+                    perferendis dolore
+                    tempora rem dignissimos magnam!
+                    Nesciunt dolore, tempore sit, temporibus autem nostrum voluptatem doloribus perspiciatis eveniet eum
+                    error
+                </p>
+                <button class="btn btn-dark mb-3">Check Out</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <table class="table text-center">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Pid</th>
+                            <th>Pimage</th>
+                            <th>Pname</th>
+                            <th>Price</th>
+                            <th>ProQty</th>
+                            <th>Total Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>101</td>
+                            <td> <img
+                                    src="https://www.titan.co.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Sites-titan-master-catalog/default/dw61458d43/images/Titan/Catalog/90188AP01_1.jpg?sw=600&sh=600"
+                                    alt=""></td>
+                            <td>SmartWatch</td>
+                            <td>&#8377; 1000.00</td>
+                            <td><i class="bi bi-dash-circle-fill" id="minus-btn"></i>
+                                <span id="displayqty"></span>
+                                <i class="bi bi-plus-circle-fill" id="plus-btn"></i>
+                            </td>
+                            <td>&#8377; 1000.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+       
+    </section>
+    
+
+    <script>
+        let btnminu = document.getElementById('minus-btn');
+        let btnplus = document.getElementById('plus-btn');
+        let displayqty = document.getElementById('displayqty');
+
+        let qty = 1;
+        displayqty.textContent = qty;
+
+        function decqty() {
+            if (qty > 1) {
+                qty--;
+                displayqty.textContent = qty;
+            }
+            else displayqty.textContent = 1;
+        }
+
+        function incqty() {
+            qty++;
+            displayqty.textContent = qty;
+        }
+
+        btnminu.addEventListener('click', decqty);
+        btnplus.addEventListener('click', incqty);
+
+    </script>
+</body>
+
+</html>
