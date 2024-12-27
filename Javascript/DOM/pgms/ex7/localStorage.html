@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Local Storage</h1>
+
+    <script>
+        let ename = "Aditya";
+        window.localStorage.setItem("empName",ename);
+        let getDate = window.localStorage.getItem("empName");
+        console.log(getDate);
+        localStorage.removeItem("empName");
+
+        let emps = [{id:1,ename:"Kiran"},{id:2,ename:"Ashok"}];
+        localStorage.setItem("employees",JSON.stringify(emps));
+        let getdate = JSON.parse(localStorage.getItem("employees"));
+        console.log(getdate,typeof getdate);
+    </script>
+</body>
+</html>

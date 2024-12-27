@@ -1,7 +1,7 @@
 
 let item = {
     id: "A101", imgurl: "https://www.titan.co.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Sites-titan-master-catalog/default/dw61458d43/images/Titan/Catalog/90188AP01_1.jpg?sw=600&sh=600",
-    pname: "Fossil Watch", price: 7000.50, qty: 1
+    pname: "Fossil Watch", price: 7000.50
 };
 
 let htmlCode = ` <tr>
@@ -22,7 +22,8 @@ let btnplus = document.getElementById('plus-btn');
 let displayqty = document.getElementById('displayqty');
 let totalprice = document.getElementById('total-price');
 
-let qty = item.qty;
+let qty = localStorage.getItem("qty")?localStorage.getItem("qty"):1;
+// let qty = item.qty;
 let pricePerUnit = item.price;
 displayqty.textContent = qty;
 totalprice.textContent = `\u20B9 ${(pricePerUnit * qty).toFixed(2)}`;
@@ -30,7 +31,8 @@ totalprice.textContent = `\u20B9 ${(pricePerUnit * qty).toFixed(2)}`;
 function decqty() {
     if (qty > 1) {
         qty--;
-        displayqty.textContent = qty;
+        localStorage.setItem("qty",qty);
+        displayqty.textContent = localStorage.getItem("qty");
         totalprice.textContent = `\u20B9 ${(pricePerUnit * qty).toFixed(2)}`;
     }
     else displayqty.textContent = 1;
@@ -38,9 +40,17 @@ function decqty() {
 
 function incqty() {
     qty++;
-    displayqty.textContent = qty;
+    localStorage.setItem("qty",qty);
+        displayqty.textContent = localStorage.getItem("qty");
     totalprice.textContent = `\u20B9 ${(pricePerUnit * qty).toFixed(2)}`;
 }
 
 btnminu.addEventListener('click', decqty);
 btnplus.addEventListener('click', incqty);
+
+// don't copy code
+document.addEventListener("copy",(event)=>{
+    const selectedData = window.getSelection().toString();
+    event.clipboardData.setData("text/plain","🖕");
+    event.preventDefault();
+});

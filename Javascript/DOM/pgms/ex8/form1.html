@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../../BootStrap/bootstrap.min.css" />
+  </head>
+  <body>
+    <nav class="navbar bg-dark narbar-dark">
+      <div class="text-white container-fluid">
+        <a href="#" class="navbar-brand text-white">🛒 Amazon</a>
+      </div>
+    </nav>
+    <section class="container-fluid mt-5">
+      <div class="row">
+        <div class="col-5 m-auto">
+          <div class="card">
+            <div class="card-header bg-dark">
+              <h4 class="text-white text-center">Login Form</h4>
+            </div>
+            <div class="card-body">
+              <form id="login-form">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control mt-3"
+                    value=""
+                    required
+                    autocomplete="email"
+                    placeholder="Enter uername/Email"
+                    id="usr-name"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="password"
+                    class="form-control mt-3"
+                    value=""
+                    required
+                    autocomplete="password"
+                    placeholder="Enter password"
+                    id="usr-pass"
+                  />
+                </div class="form-group">
+                <!-- <button class="btn btn-dark mt-3" onclick="">Submit</button> -->
+                 <input type="submit" class="btn btn-dark mt-3">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Script Code-->
+
+    <script>
+        let usrName = document.getElementById('usr-name');
+        let usrPass = document.getElementById('usr-pass');
+        let formE1 = document.getElementById('login-form');
+
+        formE1.addEventListener('submit', function(e)
+    {
+        e.preventDefault();
+        let username = usrName.value;
+        let password = usrPass.value;
+
+        let newUser = {};
+        newUser.usr = username;
+        newUser.pw = password;
+
+        console.log(newUser);
+
+        usrName.value = "";
+        usrPass.value = "";
+    })
+    </script>
+  </body>
+</html>
