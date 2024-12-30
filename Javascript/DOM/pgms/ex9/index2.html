@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+       
+        .one{
+            background-color: blue;
+        }
+        .two{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="one">Attirbute Method</h1>
+    </div>
+
+    <script>
+        let h1Tag = document.querySelector('h1');
+        console.log(h1Tag.classList);
+
+        h1Tag.classList.add('two');
+        console.log(h1Tag.classList);
+        h1Tag.classList.remove('one');
+        console.log(h1Tag.classList);
+        console.log(h1Tag.classList.contains('one'));
+    </script>
+</body>
+</html>

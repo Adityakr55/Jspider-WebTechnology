@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .header{
+            background-color: blue;
+        }
+
+        #one{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">
+        <h1 id="header">Attirbute Method</h1>
+    </div>
+
+    <script>
+        let h1Tag = document.querySelector('h1');
+        console.log(h1Tag);
+
+        console.log(h1Tag.hasAttribute('class'));
+        console.log(h1Tag.getAttribute('class'));
+        h1Tag.setAttribute('id', 'one');
+        h1Tag.removeAttribute('id');
+    </script>
+</body>
+</html>
